@@ -2,6 +2,12 @@ const shopData = JSON.parse(data);
 loadItems(shopData)
 filterBuilder()
 
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+
+if (params["title"])
+    document.querySelector("#title").innerHTML = params["title"];
+
 function loadItems(shopData) {
     let html = ''
     if (shopData.length === 0) html = "No Items To Display"
