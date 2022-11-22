@@ -36,7 +36,7 @@ data = `[
     "title": " Dress 6",
     "price": 100,
     "description": "",
-    "colour": "white",
+    "colour": "pink",
     "rating": 3
   },
   {
@@ -44,7 +44,7 @@ data = `[
     "title": " Dress 7",
     "price": 50,
     "description": "",
-    "colour": "white",
+    "colour": "pink",
     "rating": 2
   },
   {
@@ -52,7 +52,7 @@ data = `[
     "title": " Dress 8",
     "price": 105,
     "description": "",
-    "colour": "white",
+    "colour": "red",
     "rating": 4
   },
   {
@@ -60,7 +60,7 @@ data = `[
     "title": " Dress 9",
     "price": 110,
     "description": "",
-    "colour": "white",
+    "colour": "pink",
     "rating": 5
   },
   {
@@ -68,7 +68,7 @@ data = `[
     "title": " Dress 10",
     "price": 84,
     "description": "",
-    "colour": "white",
+    "colour": "blue",
     "rating": 1
   },
   {
