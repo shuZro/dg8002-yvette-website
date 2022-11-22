@@ -1,5 +1,6 @@
 data = `[
   {
+    "id": 1,
     "image": "assets/images/dresses/01.png",
     "title": "Dress 1",
     "price": 40,
@@ -8,6 +9,7 @@ data = `[
     "rating": 4
   },
   {
+    "id": 2,
     "image": "assets/images/dresses/02.png",
     "title": " Dress 2",
     "price": 35,
@@ -16,6 +18,7 @@ data = `[
     "rating": 1
   },
   {
+    "id": 3,
     "image": "assets/images/dresses/03.png",
     "title": " Dress 3",
     "price": 65,
@@ -24,6 +27,7 @@ data = `[
     "rating": 4
   },
   {
+    "id": 4,
     "image": "assets/images/dresses/04.png",
     "title": " Dress 4",
     "price": 79,
@@ -32,6 +36,7 @@ data = `[
     "rating": 3
   },
   {
+    "id": 5,
     "image": "assets/images/dresses/05.png",
     "title": " Dress 5",
     "price": 300,
@@ -40,6 +45,7 @@ data = `[
     "rating": 3
   },
   {
+    "id": 6,
     "image": "assets/images/dresses/06.png",
     "title": " Dress 6",
     "price": 50,
@@ -48,6 +54,7 @@ data = `[
     "rating": 2
   },
   {
+  "id": 7,
     "image": "assets/images/dresses/07.png",
     "title": " Dress 7",
     "price": 105,
@@ -56,6 +63,7 @@ data = `[
     "rating": 4
   },
   {
+    "id": 8,
     "image": "assets/images/dresses/08.png",
     "title": " Dress 8",
     "price": 600,
@@ -64,6 +72,7 @@ data = `[
     "rating": 5
   },
   {
+    "id": 9,
     "image": "assets/images/dresses/09.png",
     "title": " Dress 9",
     "price": 84,
@@ -72,6 +81,7 @@ data = `[
     "rating": 1
   },
   {
+    "id": 10,
     "image": "assets/images/dresses/10.png",
     "title": " Dress 10",
     "price": 1100,
@@ -80,6 +90,7 @@ data = `[
     "rating": 4
   },
   {
+    "id": 11,
     "image": "assets/images/dresses/11.png",
     "title": " Dress 11",
     "price": 98,
@@ -88,6 +99,7 @@ data = `[
     "rating": 2
   },
   {
+    "id": 12,
     "image": "assets/images/dresses/12.png",
     "title": " Dress 12",
     "price": 700,
