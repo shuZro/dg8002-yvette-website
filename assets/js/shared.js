@@ -1,5 +1,5 @@
 
-html = `<nav class="navbar navbar-expand-md navbar-light bg-light">
+nav = `<nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo" width="50%"></a>
 
             <ul class="navbar-nav ml-auto">
@@ -22,4 +22,12 @@ html = `<nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="shop.html">GET INSPIRED</a>
         </nav>`
 
-document.querySelector("#menu").innerHTML = html;
+document.querySelector("#menu").innerHTML = nav;
+
+footer = `<footer class="page-footer font-small">
+            <div class="footer-copyright text-center py-3">© 2022 Copyright:
+                <a href="/index.html">Yevette's</a>
+            </div>
+        </footer>`
+
+document.querySelector("#footer").innerHTML = footer;
