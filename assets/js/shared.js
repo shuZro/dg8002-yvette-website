@@ -24,8 +24,8 @@ nav = `<nav class="navbar navbar-expand-md navbar-light bg-light">
 
 document.querySelector("#menu").innerHTML = nav;
 
-footer = `<footer class="page-footer font-small">
-            <div class="footer-copyright text-center py-3">© 2022 Copyright:
+footer = `<footer>
+            <div class="text-center py-3">© 2022 Copyright:
                 <a href="/index.html">Yevette's</a>
             </div>
         </footer>`
