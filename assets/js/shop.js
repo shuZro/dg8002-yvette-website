@@ -33,8 +33,16 @@ function filterBuilder() {
                     display: "Pink"
                 },
                 {
+                    value: "red",
+                    display: "Red"
+                },
+                {
                     value: "blue",
                     display: "Blue"
+                },
+                {
+                    value: "grey",
+                    display: "Grey"
                 }]
         },
         {
@@ -47,6 +55,34 @@ function filterBuilder() {
                 {
                     value: 2,
                     display: "2 Star"
+                },
+                {
+                    value: 3,
+                    display: "3 Star"
+                },
+                {
+                    value: 4,
+                    display: "4 Star"
+                },
+                {
+                    value: 5,
+                    display: "5 Star"
+                }]
+        },
+        {
+            name: "Price",
+            options: [
+                {
+                    value: "0-100",
+                    display: "Under $100"
+                },
+                {
+                    value: "100-500",
+                    display: "$100 - $500"
+                },
+                {
+                    value: "500-10000",
+                    display: "Above $500"
                 }]
         }
     ]
@@ -70,14 +106,15 @@ function filterBuilder() {
 
 let ratingFilter = []
 let colourFilter = []
+let priceFilter = []
 
 function filterItems(input, attribute, value) {
     let shopData = JSON.parse(data);
     if (attribute === "rating") {
         if (input.checked)
-            ratingFilter.push(+value)
+            ratingFilter.push(value)
         else
-            ratingFilter = ratingFilter.filter(item => item !== +value)
+            ratingFilter = ratingFilter.filter(item => item !== value)
 
     }
     if (attribute === "colour") {
@@ -86,13 +123,24 @@ function filterItems(input, attribute, value) {
         else
             colourFilter = colourFilter.filter(item => item !== value)
     }
-
+    if (attribute === "price") {
+        if (input.checked)
+            priceFilter.push(value)
+        else
+            priceFilter = priceFilter.filter(item => item !== value)
+    }
     if (colourFilter.length > 0)
         shopData = shopData
         .filter(item => colourFilter.includes(item["colour"]))
+    if (priceFilter.length > 0)
+        shopData = shopData
+            .filter(item => {
+                const prices = priceFilter[priceFilter.length-1].split("-")
+                return +prices[0] < item["price"] && +prices[1] > item["price"]
+            })
     if (ratingFilter.length > 0)
         shopData = shopData
-            .filter(item => ratingFilter.includes(item["rating"]))
+            .filter(item => ratingFilter.includes(item["rating"].toString()))
 
     loadItems(shopData)
 }

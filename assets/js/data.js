@@ -17,7 +17,7 @@ data = `[
   },
   {
     "image": "assets/images/dresses/03.png",
-    "title": " Dress 4",
+    "title": " Dress 3",
     "price": 65,
     "description": "",
     "colour": "white",
@@ -25,7 +25,7 @@ data = `[
   },
   {
     "image": "assets/images/dresses/04.png",
-    "title": " Dress 5",
+    "title": " Dress 4",
     "price": 79,
     "description": "",
     "colour": "white",
@@ -33,15 +33,15 @@ data = `[
   },
   {
     "image": "assets/images/dresses/05.png",
-    "title": " Dress 6",
-    "price": 100,
+    "title": " Dress 5",
+    "price": 300,
     "description": "",
     "colour": "pink",
     "rating": 3
   },
   {
     "image": "assets/images/dresses/06.png",
-    "title": " Dress 7",
+    "title": " Dress 6",
     "price": 50,
     "description": "",
     "colour": "pink",
@@ -49,7 +49,7 @@ data = `[
   },
   {
     "image": "assets/images/dresses/07.png",
-    "title": " Dress 8",
+    "title": " Dress 7",
     "price": 105,
     "description": "",
     "colour": "red",
@@ -57,15 +57,15 @@ data = `[
   },
   {
     "image": "assets/images/dresses/08.png",
-    "title": " Dress 9",
-    "price": 110,
+    "title": " Dress 8",
+    "price": 600,
     "description": "",
     "colour": "pink",
     "rating": 5
   },
   {
     "image": "assets/images/dresses/09.png",
-    "title": " Dress 10",
+    "title": " Dress 9",
     "price": 84,
     "description": "",
     "colour": "blue",
@@ -73,26 +73,26 @@ data = `[
   },
   {
     "image": "assets/images/dresses/10.png",
-    "title": " Dress 11",
-    "price": 67,
+    "title": " Dress 10",
+    "price": 1100,
     "description": "",
-    "colour": "white",
+    "colour": "grey",
     "rating": 4
   },
   {
     "image": "assets/images/dresses/11.png",
-    "title": " Dress 12",
+    "title": " Dress 11",
     "price": 98,
     "description": "",
-    "colour": "white",
+    "colour": "pink",
     "rating": 2
   },
   {
     "image": "assets/images/dresses/12.png",
-    "title": " Dress 6",
-    "price": 100,
+    "title": " Dress 12",
+    "price": 700,
     "description": "",
-    "colour": "white",
+    "colour": "pink",
     "rating": 3
   }
 ]`;
