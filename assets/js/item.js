@@ -1,5 +1,4 @@
 const shopData = JSON.parse(data);
-
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 
@@ -19,8 +18,8 @@ if (params["id"]) {
                         <p>$${item.price}</p>
     
                         <p>Dress Size</p>
-                        <a href="#" class="btn btn-dark">Add to Cart</a>
-                        <a href="#" class="btn btn-secondary">Rental</a>
+                        <button class="btn btn-dark" onClick="addToCart('${item.id}')">Add to Cart</button>
+                        <a href="checkout.html" class="btn btn-secondary">Rental</a>
     
                         <br>
                         <a href="#" >Size & Fit</a>
@@ -40,4 +39,12 @@ if (params["id"]) {
     } else {
         document.querySelector("#item").innerHTML = "Not a valid link!";
     }
+}
+
+function addToCart(item) {
+    const cart = JSON.parse(localStorage.getItem('cart'));
+
+    cart.push(item)
+    console.log(cart)
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
