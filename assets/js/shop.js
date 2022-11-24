@@ -11,10 +11,10 @@ if (params["title"])
 function loadItems(shopData) {
     let html = ''
     if (shopData.length === 0) html = "No Items To Display"
-    shopData.forEach(function myFunction(item) {
+    shopData.forEach(item => {
         html += `<div class="p-2">
                 <div class="card" style="width: 11rem;">
-                    <a href="item.html"><img class="card-img-top" src="${item.image}" alt="Card image cap"></a>
+                    <a href="item.html?id=${item.id}"><img class="card-img-top" src="${item.image}" alt="image"></a>
                     <div class="card-body">
                         <p class="card-text">${item.title}: <b>$${item.price}</b></p>
                     </div>
