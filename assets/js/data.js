@@ -6,7 +6,9 @@ data = `[
     "price": 40,
     "description": "",
     "colour": "white",
-    "rating": 4
+    "type": "New",
+    "rating": 4,
+    "reviews": []
   },
   {
     "id": 2,
@@ -15,7 +17,9 @@ data = `[
     "price": 35,
     "description": "",
     "colour": "white",
-    "rating": 1
+    "type": "New",
+    "rating": 1,
+    "reviews": []
   },
   {
     "id": 3,
@@ -24,7 +28,9 @@ data = `[
     "price": 65,
     "description": "",
     "colour": "white",
-    "rating": 4
+    "type": "New",
+    "rating": 4,
+    "reviews": []
   },
   {
     "id": 4,
@@ -33,7 +39,9 @@ data = `[
     "price": 79,
     "description": "",
     "colour": "white",
-    "rating": 3
+    "type": "New",
+    "rating": 3,
+    "reviews": []
   },
   {
     "id": 5,
@@ -42,7 +50,9 @@ data = `[
     "price": 300,
     "description": "",
     "colour": "pink",
-    "rating": 3
+    "type": "New",
+    "rating": 3,
+    "reviews": []
   },
   {
     "id": 6,
@@ -51,7 +61,9 @@ data = `[
     "price": 50,
     "description": "",
     "colour": "pink",
-    "rating": 2
+    "type": "New",
+    "rating": 2,
+    "reviews": []
   },
   {
   "id": 7,
@@ -60,7 +72,9 @@ data = `[
     "price": 105,
     "description": "",
     "colour": "red",
-    "rating": 4
+    "type": "New",
+    "rating": 4,
+    "reviews": []
   },
   {
     "id": 8,
@@ -69,7 +83,9 @@ data = `[
     "price": 600,
     "description": "",
     "colour": "pink",
-    "rating": 5
+    "type": "New",
+    "rating": 5,
+    "reviews": []
   },
   {
     "id": 9,
@@ -78,7 +94,9 @@ data = `[
     "price": 84,
     "description": "",
     "colour": "blue",
-    "rating": 1
+    "type": "New",
+    "rating": 1,
+    "reviews": []
   },
   {
     "id": 10,
@@ -87,7 +105,9 @@ data = `[
     "price": 1100,
     "description": "",
     "colour": "grey",
-    "rating": 4
+    "type": "New",
+    "rating": 4,
+    "reviews": []
   },
   {
     "id": 11,
@@ -96,7 +116,9 @@ data = `[
     "price": 98,
     "description": "",
     "colour": "pink",
-    "rating": 2
+    "type": "New",
+    "rating": 2,
+    "reviews": []
   },
   {
     "id": 12,
@@ -105,6 +127,8 @@ data = `[
     "price": 700,
     "description": "",
     "colour": "pink",
-    "rating": 3
+    "type": "New",
+    "rating": 3,
+    "reviews": []
   }
 ]`;
