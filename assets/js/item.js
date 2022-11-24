@@ -18,7 +18,7 @@ if (params["id"]) {
                         <p>$${item.price}</p>
     
                         <p>Dress Size</p>
-                        <button class="btn btn-dark" onClick="addToCart('${item.id}')">Add to Cart</button>
+                        <button class="btn btn-dark" onClick='addToCart(${JSON.stringify(item)})'>Add to Cart</button>
                         <a href="checkout.html" class="btn btn-secondary">Rental</a>
     
                         <br>
@@ -45,6 +45,5 @@ function addToCart(item) {
     const cart = JSON.parse(localStorage.getItem('cart'));
 
     cart.push(item)
-    console.log(cart)
     localStorage.setItem('cart', JSON.stringify(cart));
 }
