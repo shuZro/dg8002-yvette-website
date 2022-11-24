@@ -15,7 +15,7 @@ if (params["id"]) {
                         <p>${item.title}</p>
                         <p>${item.description}</p>
                         <p>Rating: ${item.rating}/5</p>
-                        <p>$${item.price}</p>
+                        <p>$${item.price}.00</p>
     
                         <p>Dress Size</p>
                         <button class="btn btn-dark" onClick='addToCart(${JSON.stringify(item)})'>Add to Cart</button>

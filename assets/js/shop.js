@@ -16,7 +16,7 @@ function loadItems(shopData) {
                 <div class="card" style="width: 11rem;">
                     <a href="item.html?id=${item.id}"><img class="card-img-top" src="${item.image}" alt="image"></a>
                     <div class="card-body">
-                        <p class="card-text">${item.title}: <b>$${item.price}</b></p>
+                        <p class="card-text">${item.title}: <b>$${item.price}.00</b></p>
                     </div>
                 </div>
             </div>`
