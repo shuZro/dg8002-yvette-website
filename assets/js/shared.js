@@ -10,7 +10,12 @@ nav = `<nav class="navbar navbar-expand-md navbar-light bg-light">
                 </li>
                 <li class="nav-item"><a class="nav-link" href=""><i class="material-icons">account_circle</i></a></li>
                 <li class="nav-item"><a class="nav-link" href=""><i class="material-icons">favorite</i></a></li>
-                <li class="nav-item"><a class="nav-link" href="checkout.html"><i class="material-icons">shopping_cart</i></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="checkout.html">
+                        <i class="material-icons">shopping_cart</i>
+                        <span id="cartBadge" class="badge badge-secondary">0</span>
+                    </a>
+                </li>
             </ul>
         </nav>
         <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-center">
@@ -30,3 +35,6 @@ footer = `<footer>
         </footer>`
 
 document.querySelector("#footer").innerHTML = footer;
+
+const cart = JSON.parse(localStorage.getItem('cart'));
+document.querySelector("#cartBadge").innerHTML = cart.length;

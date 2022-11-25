@@ -61,6 +61,8 @@ function addToCart(item) {
 
     cart.push(item)
     localStorage.setItem('cart', JSON.stringify(cart));
+
+    document.querySelector("#cartBadge").innerHTML = cart.length;
 }
 
 function initItemReview(itemId) {
