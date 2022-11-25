@@ -7,8 +7,7 @@ data = `[
     "description": "",
     "colour": "white",
     "type": "New",
-    "rating": 4,
-    "reviews": []
+    "rating": 4
   },
   {
     "id": 2,
@@ -18,8 +17,7 @@ data = `[
     "description": "",
     "colour": "white",
     "type": "New",
-    "rating": 1,
-    "reviews": []
+    "rating": 1
   },
   {
     "id": 3,
@@ -29,8 +27,7 @@ data = `[
     "description": "",
     "colour": "white",
     "type": "New",
-    "rating": 4,
-    "reviews": []
+    "rating": 4
   },
   {
     "id": 4,
@@ -40,8 +37,7 @@ data = `[
     "description": "",
     "colour": "white",
     "type": "New",
-    "rating": 3,
-    "reviews": []
+    "rating": 3
   },
   {
     "id": 5,
@@ -51,8 +47,7 @@ data = `[
     "description": "",
     "colour": "pink",
     "type": "New",
-    "rating": 3,
-    "reviews": []
+    "rating": 3
   },
   {
     "id": 6,
@@ -62,8 +57,7 @@ data = `[
     "description": "",
     "colour": "pink",
     "type": "New",
-    "rating": 2,
-    "reviews": []
+    "rating": 2
   },
   {
   "id": 7,
@@ -73,8 +67,7 @@ data = `[
     "description": "",
     "colour": "red",
     "type": "New",
-    "rating": 4,
-    "reviews": []
+    "rating": 4
   },
   {
     "id": 8,
@@ -84,8 +77,7 @@ data = `[
     "description": "",
     "colour": "pink",
     "type": "New",
-    "rating": 5,
-    "reviews": []
+    "rating": 5
   },
   {
     "id": 9,
@@ -95,8 +87,7 @@ data = `[
     "description": "",
     "colour": "blue",
     "type": "New",
-    "rating": 1,
-    "reviews": []
+    "rating": 1
   },
   {
     "id": 10,
@@ -106,8 +97,7 @@ data = `[
     "description": "",
     "colour": "grey",
     "type": "New",
-    "rating": 4,
-    "reviews": []
+    "rating": 4
   },
   {
     "id": 11,
@@ -117,8 +107,7 @@ data = `[
     "description": "",
     "colour": "pink",
     "type": "New",
-    "rating": 2,
-    "reviews": []
+    "rating": 2
   },
   {
     "id": 12,
@@ -128,7 +117,6 @@ data = `[
     "description": "",
     "colour": "pink",
     "type": "New",
-    "rating": 3,
-    "reviews": []
+    "rating": 3
   }
 ]`;
