@@ -2,3 +2,7 @@ body {
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
 	background-color: #EAE3D8 !important;
 }
+
+.roundImg {
+	border-radius: 60%;
+}

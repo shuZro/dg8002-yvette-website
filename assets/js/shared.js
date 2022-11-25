@@ -19,10 +19,10 @@ nav = `<nav class="navbar navbar-expand-md navbar-light bg-light">
         </nav>
         <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-center">
             <a class="navbar-brand" href="shop.html?title=NEW">NEW</a>
-            <a class="navbar-brand" href="shop.html?title=BRIDAL DRESS">BRIDAL DRESS</a>
-            <a class="navbar-brand" href="shop.html?title=PROM DRESS">PROM DRESS</a>
+            <a class="navbar-brand" href="shop.html?title=BRIDAL">BRIDAL</a>
+            <a class="navbar-brand" href="shop.html?title=PROM">PROM</a>
             <a class="navbar-brand" href="shop.html?title=SALE">SALE</a>
-            <a class="navbar-brand" href="shop.html?title=RENTALS">RENTALS</a>
+            <a class="navbar-brand" href="shop.html?title=RENTAL">RENTAL</a>
         </nav>`
 
 document.querySelector("#menu").innerHTML = nav;

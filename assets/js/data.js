@@ -6,7 +6,7 @@ data = `[
     "price": 40,
     "description": "",
     "colour": "white",
-    "type": "New",
+    "type": "new,bridal",
     "rating": 4
   },
   {
@@ -16,7 +16,7 @@ data = `[
     "price": 35,
     "description": "",
     "colour": "white",
-    "type": "New",
+    "type": "new,bridal",
     "rating": 1
   },
   {
@@ -26,7 +26,7 @@ data = `[
     "price": 65,
     "description": "",
     "colour": "white",
-    "type": "New",
+    "type": "new,bridal",
     "rating": 4
   },
   {
@@ -36,7 +36,7 @@ data = `[
     "price": 79,
     "description": "",
     "colour": "white",
-    "type": "New",
+    "type": "new,bridal",
     "rating": 3
   },
   {
@@ -46,7 +46,7 @@ data = `[
     "price": 300,
     "description": "",
     "colour": "pink",
-    "type": "New",
+    "type": "prom",
     "rating": 3
   },
   {
@@ -56,7 +56,7 @@ data = `[
     "price": 50,
     "description": "",
     "colour": "pink",
-    "type": "New",
+    "type": "prom,rental",
     "rating": 2
   },
   {
@@ -66,7 +66,7 @@ data = `[
     "price": 105,
     "description": "",
     "colour": "red",
-    "type": "New",
+    "type": "prom,rental",
     "rating": 4
   },
   {
@@ -76,7 +76,7 @@ data = `[
     "price": 600,
     "description": "",
     "colour": "pink",
-    "type": "New",
+    "type": "prom,rental",
     "rating": 5
   },
   {
@@ -86,7 +86,7 @@ data = `[
     "price": 84,
     "description": "",
     "colour": "blue",
-    "type": "New",
+    "type": "sale,rental",
     "rating": 1
   },
   {
@@ -96,7 +96,7 @@ data = `[
     "price": 1100,
     "description": "",
     "colour": "grey",
-    "type": "New",
+    "type": "sale",
     "rating": 4
   },
   {
@@ -106,7 +106,7 @@ data = `[
     "price": 98,
     "description": "",
     "colour": "pink",
-    "type": "New",
+    "type": "sale",
     "rating": 2
   },
   {
@@ -116,7 +116,47 @@ data = `[
     "price": 700,
     "description": "",
     "colour": "pink",
-    "type": "New",
+    "type": "sale",
+    "rating": 3
+  },
+  {
+    "id": 13,
+    "image": "assets/images/dresses/13.png",
+    "title": " Dress 13",
+    "price": 840,
+    "description": "",
+    "colour": "white",
+    "type": "plus,bridal",
+    "rating": 1
+  },
+  {
+    "id": 14,
+    "image": "assets/images/dresses/14.png",
+    "title": " Dress 14",
+    "price": 119,
+    "description": "",
+    "colour": "white",
+    "type": "plus,bridal,rental",
+    "rating": 4
+  },
+  {
+    "id": 15,
+    "image": "assets/images/dresses/15.png",
+    "title": " Dress 15",
+    "price": 859,
+    "description": "",
+    "colour": "white",
+    "type": "plus,bridal",
+    "rating": 2
+  },
+  {
+    "id": 16,
+    "image": "assets/images/dresses/16.png",
+    "title": " Dress 16",
+    "price": 225,
+    "description": "",
+    "colour": "white",
+    "type": "plus,bridal",
     "rating": 3
   }
 ]`;
