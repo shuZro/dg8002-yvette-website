@@ -48,6 +48,8 @@ function removeFromCart(id) {
 function updateQuantity(id, multiplier) {
     const cartItem = cart.find(item => item.id === id);
     cartItem.quantity += 1 * multiplier
+    if (cartItem.quantity < 1) cartItem.quantity = 1;
+
     localStorage.setItem('cart', JSON.stringify(cart));
     window.location.reload()
 }
