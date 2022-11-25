@@ -35,5 +35,10 @@ footerHtml = `<footer>
 
 document.querySelector("#footer").innerHTML = footerHtml;
 
-let cart = JSON.parse(localStorage.getItem('cart'));
+let cart = localStorage.getItem('cart');
+if (!cart) {
+    localStorage.setItem('cart', JSON.stringify([]));
+}
+
+cart = JSON.parse(localStorage.getItem('cart'));
 document.querySelector("#cartBadge").innerHTML = cart.length;
