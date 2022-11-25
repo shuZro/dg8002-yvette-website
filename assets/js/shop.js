@@ -13,10 +13,10 @@ if (params["type"]) {
 
 
 function loadItems(shopData) {
-    let html = ''
-    if (shopData.length === 0) html = "No Items To Display"
+    let shopHtml = ''
+    if (shopData.length === 0) shopHtml = "<b>No Items To Display</b>"
     shopData.forEach(item => {
-        html += `<div class="p-2">
+        shopHtml += `<div class="p-2">
                 <div class="card" style="width: 11rem;">
                     <a href="item.html?id=${item.id}"><img class="card-img-top" src="${item.image}" alt="image"></a>
                     <div class="card-body">
@@ -26,7 +26,7 @@ function loadItems(shopData) {
             </div>`
     })
 
-    document.querySelector("#items").innerHTML = html;
+    document.querySelector("#items").innerHTML = shopHtml;
 }
 
 function filterBuilder() {

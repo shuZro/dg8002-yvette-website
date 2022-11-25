@@ -1,5 +1,5 @@
-// const cart = JSON.parse(localStorage.getItem('cart'));
 let cartHtml = ""
+if (cart.length === 0) cartHtml = "<b>No Items In Cart</b>"
 cart.forEach(item => {
     cartHtml += `<div class="row">
                     <div class="col-3">
