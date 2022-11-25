@@ -18,11 +18,11 @@ nav = `<nav class="navbar navbar-expand-md navbar-light bg-light">
             </ul>
         </nav>
         <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-center">
-            <a class="navbar-brand" href="shop.html?title=NEW">NEW</a>
-            <a class="navbar-brand" href="shop.html?title=BRIDAL">BRIDAL</a>
-            <a class="navbar-brand" href="shop.html?title=PROM">PROM</a>
-            <a class="navbar-brand" href="shop.html?title=SALE">SALE</a>
-            <a class="navbar-brand" href="shop.html?title=RENTAL">RENTAL</a>
+           <a class="navbar-brand" href="shop.html">ALL</a>
+            <a class="navbar-brand" href="shop.html?type=BRIDAL">BRIDAL</a>
+            <a class="navbar-brand" href="shop.html?type=PROM">PROM</a>
+            <a class="navbar-brand" href="shop.html?type=SALE">SALE</a>
+            <a class="navbar-brand" href="shop.html?type=RENTAL">RENTAL</a>
         </nav>`
 
 document.querySelector("#menu").innerHTML = nav;

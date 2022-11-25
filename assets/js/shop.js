@@ -1,12 +1,16 @@
-const shopData = JSON.parse(data);
+let shopData = JSON.parse(data);
 loadItems(shopData)
 filterBuilder()
 
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 
-if (params["title"])
-    document.querySelector("#title").innerHTML = params["title"];
+if (params["type"]) {
+    document.querySelector("#title").innerHTML = params["type"];
+    shopData = shopData.filter(item => item.type.includes(params["type"].toLowerCase()))
+    loadItems(shopData)
+}
+
 
 function loadItems(shopData) {
     let html = ''

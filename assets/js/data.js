@@ -36,7 +36,7 @@ data = `[
     "price": 79,
     "description": "",
     "colour": "white",
-    "type": "new,bridal",
+    "type": "new,bridal,rental",
     "rating": 3
   },
   {
@@ -86,7 +86,7 @@ data = `[
     "price": 84,
     "description": "",
     "colour": "blue",
-    "type": "sale,rental",
+    "type": "sale,rental,prom",
     "rating": 1
   },
   {
@@ -96,7 +96,7 @@ data = `[
     "price": 1100,
     "description": "",
     "colour": "grey",
-    "type": "sale",
+    "type": "sale,plus",
     "rating": 4
   },
   {
@@ -146,7 +146,7 @@ data = `[
     "price": 859,
     "description": "",
     "colour": "white",
-    "type": "plus,bridal",
+    "type": "plus,bridal,sale",
     "rating": 2
   },
   {
@@ -156,7 +156,7 @@ data = `[
     "price": 225,
     "description": "",
     "colour": "white",
-    "type": "plus,bridal",
+    "type": "plus,bridal,new",
     "rating": 3
   }
 ]`;
