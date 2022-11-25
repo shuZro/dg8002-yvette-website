@@ -8,7 +8,7 @@ navHtml = `<nav class="navbar navbar-expand-md navbar-light bg-light">
                         <input class="form-control" type="text" name="Search" placeholder="Search...">
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="material-icons">account_circle</i></a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html"><i class="material-icons">account_circle</i></a></li>
                 <li class="nav-item">
                     <a class="nav-link" href="checkout.html">
                         <i class="material-icons">shopping_cart</i>
