@@ -9,7 +9,6 @@ nav = `<nav class="navbar navbar-expand-md navbar-light bg-light">
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href=""><i class="material-icons">account_circle</i></a></li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="material-icons">favorite</i></a></li>
                 <li class="nav-item">
                     <a class="nav-link" href="checkout.html">
                         <i class="material-icons">shopping_cart</i>
