@@ -57,12 +57,18 @@ if (params["id"]) {
 }
 
 function addToCart(item) {
-    const cart = JSON.parse(localStorage.getItem('cart'));
+    const cartIds = cart.map(item => item.id)
+    if (cartIds.includes(item.id)) {
+        const cartItem = cart.find(_item => _item.id === item.id);
+        cartItem.quantity += 1;
+    } else {
+        item.quantity = 1;
+        cart.push(item)
+    }
 
-    cart.push(item)
     localStorage.setItem('cart', JSON.stringify(cart));
-
     document.querySelector("#cartBadge").innerHTML = cart.length;
+    window.location.href = 'checkout.html';
 }
 
 function initItemReview(itemId) {

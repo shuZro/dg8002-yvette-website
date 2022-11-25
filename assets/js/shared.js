@@ -1,5 +1,5 @@
 
-nav = `<nav class="navbar navbar-expand-md navbar-light bg-light">
+navHtml = `<nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo" width="50%"></a>
 
             <ul class="navbar-nav ml-auto">
@@ -25,15 +25,15 @@ nav = `<nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="shop.html?type=RENTAL">RENTAL</a>
         </nav>`
 
-document.querySelector("#menu").innerHTML = nav;
+document.querySelector("#menu").innerHTML = navHtml;
 
-footer = `<footer>
+footerHtml = `<footer>
             <div class="text-center py-3">© 2022 Copyright:
                 <a href="/index.html">Yevette's</a>
             </div>
         </footer>`
 
-document.querySelector("#footer").innerHTML = footer;
+document.querySelector("#footer").innerHTML = footerHtml;
 
-const cart = JSON.parse(localStorage.getItem('cart'));
+let cart = JSON.parse(localStorage.getItem('cart'));
 document.querySelector("#cartBadge").innerHTML = cart.length;
