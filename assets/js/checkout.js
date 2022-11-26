@@ -8,7 +8,7 @@ cart.forEach(item => {
                     <div class="col-3" style="font-size: 12px">
                         ${item.title} <br>
 
-                        Size: M <br>
+                        Size: ${item.size} <br>
                         Color: ${item.colour.toUpperCase()} <br>
                         <label for="rentalDate">Rental Date</label>
                         <input type="date"

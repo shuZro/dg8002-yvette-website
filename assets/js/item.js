@@ -19,9 +19,19 @@ if (params["id"]) {
                         <p>Rating: ${item.rating}/5</p>
                         <p>$${item.price}.00</p>
     
-                        <p>Dress Size</p>
+
+                        <label for="size">Dress Size</label>
+                        <select name="size" id="dressSize" class="form-control">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        
+                        <br>
                         <button class="btn btn-dark" onClick='addToCart(${JSON.stringify(item)})'>Add to Cart</button>
-                        <a href="checkout.html" class="btn btn-secondary">Rental</a>
+                        <button class="btn btn-secondary" disabled>Rental Available</button>
     
                         <br>
                         <a href="#" >Size & Fit</a>
@@ -57,14 +67,10 @@ if (params["id"]) {
 }
 
 function addToCart(item) {
-    const cartIds = cart.map(item => item.id)
-    if (cartIds.includes(item.id)) {
-        const cartItem = cart.find(_item => _item.id === item.id);
-        cartItem.quantity += 1;
-    } else {
-        item.quantity = 1;
-        cart.push(item)
-    }
+    const size =  document.querySelector("#dressSize").value;
+    item.quantity = 1;
+    item.size = size
+    cart.push(item)
 
     localStorage.setItem('cart', JSON.stringify(cart));
     document.querySelector("#cartBadge").innerHTML = cart.length;
