@@ -29,7 +29,7 @@ document.querySelector("#menu").innerHTML = navHtml;
 
 footerHtml = `<footer>
             <div class="text-center py-3">© 2022 Copyright:
-                <a href="/index.html">Yevette's</a>
+                <a href="/index.html">Yvette's</a>
             </div>
         </footer>`
 

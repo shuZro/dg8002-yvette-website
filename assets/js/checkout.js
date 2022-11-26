@@ -38,6 +38,12 @@ document.querySelector("#cartItems").innerHTML = cartHtml;
 const cartTotal = cart.map(item => item.price * item.quantity).reduce((a, b) => a + b, 0)
 document.querySelector("#totalPrice").innerHTML = `$${cartTotal}.00`
 
+function checkout() {
+    alert("Purchase complete and processing! Your invoice and shipping information will be emailed to you! Thank you for shopping with Yvette")
+    cart = [];
+    localStorage.setItem('cart', JSON.stringify([]));
+    window.location.replace("index.html");
+}
 
 function removeFromCart(id) {
     cart = cart.filter(item => item.id !== id)
