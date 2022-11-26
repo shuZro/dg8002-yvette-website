@@ -1,5 +1,5 @@
 
-navHtml = `<nav class="navbar navbar-expand-md navbar-light bg-light">
+navHtml = `<nav class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo" width="50%"></a>
 
             <ul class="navbar-nav ml-auto">
@@ -17,7 +17,7 @@ navHtml = `<nav class="navbar navbar-expand-md navbar-light bg-light">
                 </li>
             </ul>
         </nav>
-        <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-center">
+        <nav class="navbar navbar-expand-md navbar-light justify-content-center">
            <a class="navbar-brand" href="shop.html">ALL</a>
             <a class="navbar-brand" href="shop.html?type=BRIDAL">BRIDAL</a>
             <a class="navbar-brand" href="shop.html?type=PROM">PROM</a>
