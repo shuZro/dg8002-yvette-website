@@ -4,7 +4,7 @@ data = `[
     "image": "assets/images/dresses/01.png",
     "title": "Dress 1",
     "price": 40,
-    "description": "",
+    "description": "Beautiful white bridal dress",
     "colour": "white",
     "type": "new,bridal",
     "rating": 4
