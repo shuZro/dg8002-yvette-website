@@ -27,12 +27,11 @@
                                     <div id="cartItems"></div>
                                     <div class="row">
                                         <div class="col-6">
-                                            <label for="promo">Promo Code</label>
-                                            <br>
-                                            <input type="text" id="promo"
-                                                   name="promo" maxlength="10"
-                                                   size="10"
-                                                   placeholder="Enter Code">
+                                            <label id="codeLabel" for="promoCode">Promo Code</label>
+                                            <input type="text" id="promoCode"
+                                                   name="promoCode" maxlength="7"
+                                                   size="7" class="form-control"
+                                                   placeholder="XX####" oninput="applyPromo()">
                                         </div>
 
                                         <div class="col-3">
@@ -48,45 +47,50 @@
 
                             <div class="col">
                                 <h5>Payment Information</h5>
-                                <div class="row">
-                                    <a href="#" class="btn btn-primary">Paypal</a>
-                                </div>
-                                <div class="row">
-                                    <a href="#" class="btn btn-primary">Credit Card</a>
-                                </div>
 
-                                <!-- CREDIT CARD -->
                                 <div class="row">
                                     <form>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Name on card:</label>
-                                            <input type="text" placeholder="Enter Name Here">
-                                        </div>
+                                        <div class="container">
 
-                                        <div class="form-group">
-                                            <label>Card Number: </label>
-                                            <input type="password" placeholder="Enter Number Here">
-                                        </div>
+                                            <div class="row">
+                                                <div class="col form-group">
+                                                    <input type="text" class="form-control" id="cardName"
+                                                           placeholder="Name on Card">
+                                                </div>
+                                                <div class="col form-group">
+                                                    <input type="tel" maxlength="19" oninput="formatCardNumber()"
+                                                           class="form-control" id="cardNumber"
+                                                           placeholder="Card Number">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col form-group">
+                                                    <input type="month" placeholder="MM / YY" class="form-control"
+                                                           id="cardExp">
+                                                </div>
+                                                <div class="col form-group">
+                                                    <input type="tel" maxlength="3" placeholder="CVC"
+                                                           class="form-control"
+                                                           id="cvc">
+                                                </div>
+                                            </div>
 
-                                        <div class="form-group">
-                                            <label>Expiration Date: </label>
-                                            <input type="month">
                                         </div>
-
-                                        <div class="form-group">
-                                            <label>CVV: </label>
-                                            <input type="password" maxlength="3">
-                                        </div>
-
 
                                         <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Sign up for our
+                                            <input type="checkbox" class="form-check-input" id="newLetter">
+                                            <label class="form-check-label" for="newLetter">Sign up for our
                                                 newsletter</label>
                                         </div>
+
                                     </form>
+
                                 </div>
-                                <!-- CREDIT CARD END-->
+                                <div class="row">
+                                    <button id="checkoutBtn" onClick="checkout()" class="btn btn-primary">Checkout
+                                    </button>
+                                </div>
+
                             </div>
 
                         </div>
@@ -94,7 +98,6 @@
 
                 </div>
             </div>
-            <a id="checkoutBtn" onClick="checkout()" href="#" class="btn btn-primary">Checkout</a>
         </div>
     </div>
 </div>

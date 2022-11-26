@@ -35,14 +35,11 @@ cart.forEach(item => {
 
 document.querySelector("#cartItems").innerHTML = cartHtml;
 
-const cartTotal = cart.map(item => item.price * item.quantity).reduce((a, b) => a + b, 0)
+let cartTotal = cart.map(item => item.price * item.quantity).reduce((a, b) => a + b, 0)
 document.querySelector("#totalPrice").innerHTML = `$${cartTotal}.00`
 
-function checkout() {
-    alert("Purchase complete and processing! Your invoice and shipping information will be emailed to you! Thank you for shopping with Yvette")
-    cart = [];
-    localStorage.setItem('cart', JSON.stringify([]));
-    window.location.replace("index.html");
+if (cartTotal === 0) {
+    document.querySelector("#checkoutBtn").disabled = true;
 }
 
 function removeFromCart(id) {
@@ -58,4 +55,50 @@ function updateQuantity(id, multiplier) {
 
     localStorage.setItem('cart', JSON.stringify(cart));
     window.location.reload()
+}
+
+function checkout() {
+    const promoCode = document.querySelector("#promoCode").value
+    if (promoCode !== "DG8002" && promoCode !== "") {
+        alert("Invalid Promo Code!")
+    } else if (!validateCardInfo()) {
+        alert("Invalid Card Info! Payment Declined!")
+    } else {
+        alert("Purchase complete and processing! Your invoice and shipping information will be emailed to you! Thank you for shopping with Yvette")
+        cart = [];
+        localStorage.setItem('cart', JSON.stringify([]));
+        window.location.replace("index.html");
+    }
+}
+
+function validateCardInfo() {
+    let cardNumber = document.querySelector("#cardNumber").value;
+    let cvc = document.querySelector("#cvc").value;
+    let cardExp = document.querySelector("#cardExp").value;
+    let cardName = document.querySelector("#cardName").value;
+
+    const cvcReg = "\\d{3}";
+    const numberReg = "\\b(\\d{4}[- ]?){4}";
+    return !!cardNumber.match(numberReg) && !!cvc.match(cvcReg) && cardName !== "" && cardExp !== "";
+}
+
+function formatCardNumber() {
+    let value = document.querySelector("#cardNumber").value;
+
+    if (value.length === 4 || value.length === 9 || value.length === 14) {
+        value += " "
+    }
+    document.querySelector("#cardNumber").value = value;
+}
+
+function applyPromo() {
+    const promoCode = document.querySelector("#promoCode").value
+    if (promoCode === "DG8002") {
+        const promo = cartTotal * 0.5
+        cartTotal -= promo
+        document.querySelector("#totalPrice").innerHTML = `$${cartTotal}.00`;
+
+        document.querySelector("#promoCode").disabled = true;
+        document.querySelector("#codeLabel").innerHTML = "Promo Code Applied! (-50%)";
+    }
 }
