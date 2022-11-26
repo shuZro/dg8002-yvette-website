@@ -17,7 +17,7 @@ function loadItems(shopData) {
     if (shopData.length === 0) shopHtml = "<b>No Items To Display</b>"
     shopData.forEach(item => {
         shopHtml += `<div class="p-2">
-                <div class="card" style="width: 11rem;">
+                <div class="card card-beige" style="width: 11rem;">
                     <a href="item.html?id=${item.id}"><img class="card-img-top" src="${item.image}" alt="image"></a>
                     <div class="card-body">
                         <p class="card-text">${item.title}: <b>$${item.price}.00</b></p>
@@ -99,7 +99,7 @@ function filterBuilder() {
 
     let html = ''
     filters.forEach(filter => {
-        html += `<ul class="list-group">${filter.name}<li class="list-group-item">`
+        html += `<ul class="list-group ">${filter.name}<li class="list-group-item">`
         filter.options.forEach((option, index) => {
             html += `
             <input type="checkbox" id="${filter.name}${index}" 
