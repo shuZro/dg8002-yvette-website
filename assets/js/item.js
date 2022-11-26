@@ -14,10 +14,10 @@ if (params["id"]) {
                     </div>
     
                     <div class="col">
-                        <p>${item.title}</p>
-                        <p>${item.description}</p>
-                        <p>Rating: ${item.rating}/5</p>
-                        <p>$${item.price}.00</p>
+                        <h4>${item.title}</h4>
+                        <p><i>${item.description}</i></p>
+                        <p>Rating: <b>${item.rating}/5</b></p>
+                        <p>Price: <b>$${item.price}.00</b></p>
     
 
                         <label for="size">Dress Size</label>
