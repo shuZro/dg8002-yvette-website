@@ -3,6 +3,6 @@ body {
 	background-color: #EAE3D8 !important;
 }
 
-.roundImg {
-	border-radius: 60%;
+img {
+	border-radius: 5%;
 }
