@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
 
     <title>Yvette - Login</title>
 </head>
@@ -13,37 +13,44 @@
     <div id="menu"></div>
 
     <div class="container">
-        <div class="card">
+        <div class="card card-beige">
             <img class="card-img-top" src="assets/images/home-banner.png" alt="home-banner">
             <div class="card-body">
-                <h5 class="card-title">Login</h5>
+                <h5 class="card-title text-center">Login</h5>
                 <div class="card-text">
-                    <div class="container">
-
+                    <div class="container" style="width: 50%">
                         <div class="row">
-                            <p>Email</p>
-                        </div>
-                        
-                        <input type="text" name="" placeholder="Enter Email" id="email" />
-
-                        <div class="row">
-                            <p>Password</p>
+                            <input class="form-control" type="text" name="" placeholder="Enter Email" id="email"/>
                         </div>
 
-                        <input type="password" name="" placeholder="Enter Password" id="password" />
+                        <br>
+
+                        <div class="row">
+                            <input class="form-control" type="password" name="" placeholder="Enter Password" id="password"/>
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-dark" type="button" onclick="validateLogin()">Sign in</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-dark" type="submit" onclick="alert('Password is 123456')">Forgot password?</button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <a type="button" class="btn btn-dark" href="#">Create a New Account</a>
+                            </div>
+                            <div class="col">
+                                <a href="index.html" type="button" class="btn btn-dark">Continue Guest</a>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
 
-                <input type="submit" value="Forgot password?" title="Forgot Password?" />
-                <br />
-                <br />
-                <button type="button" value="Login" onclick="validate();">Sign in</button>
-
-                <p>New Customer? Create a New Account</p>
-                <p>OR</p>
-
-                <button type="button" onclick="continuePage();">Continue Guest</button>
 
             </div>
         </div>

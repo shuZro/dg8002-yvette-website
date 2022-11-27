@@ -105,8 +105,13 @@ function addItemReview(itemId) {
     if (inputValue) {
         let reviews = JSON.parse(localStorage.getItem('item' + itemId));
         // reviews = []
+        let userName =  "Guest User"
+        if (user) {
+            userName = user
+        }
+
         reviews.push({
-            user: "Guest User",
+            user: userName,
             review: inputValue,
             date: new Date(),
             rating: ratingValue

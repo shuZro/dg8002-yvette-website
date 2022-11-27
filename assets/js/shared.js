@@ -1,3 +1,9 @@
+let user = localStorage.getItem('user');
+
+let profileBtn = '<li class="nav-item"><a class="nav-link" href="login.html"><i class="material-icons">login</i></a></li>'
+if (user) {
+    profileBtn = `<li class="nav-item"><a class="nav-link" type="button" onclick="alert('${user}')"><i class="material-icons">account_circle</i></a></li>`
+}
 
 navHtml = `<nav class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo" width="50%"></a>
@@ -8,7 +14,7 @@ navHtml = `<nav class="navbar navbar-expand-md navbar-light">
                         <input class="form-control" type="text" name="Search" placeholder="Search...">
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="login.html"><i class="material-icons">account_circle</i></a></li>
+               ${profileBtn}
                 <li class="nav-item">
                     <a class="nav-link" href="checkout.html">
                         <i class="material-icons">shopping_cart</i>

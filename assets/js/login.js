@@ -1,21 +1,13 @@
-// simple test for email and pass 
+function validateLogin() {
 
-function validate() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-
-    if (email == "human1@nothing.com" && password == "123456") {
-        alert("login sucessfull")
+    if (email === "dg8002@mdm.com" && password === "123456") {
+        alert("Login successful")
         window.location.href = "index.html"
+        localStorage.setItem('user', email)
+    } else
+        alert("Email or Password incorrect!")
 
-    }
-    else 
-        alert("email or password incorrect")       
-
-}
-
-function continuePage() {
-
-    window.location.href = "index.html"
 }
