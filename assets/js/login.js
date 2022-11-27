@@ -11,3 +11,7 @@ function validateLogin() {
         alert("Email or Password incorrect!")
 
 }
+
+function createNewAccount() {
+    alert("New account created!")
+}

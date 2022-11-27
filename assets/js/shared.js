@@ -27,7 +27,7 @@ navHtml = `<nav class="navbar navbar-expand-md navbar-light">
                         <span id="cartBadge" class="badge badge-secondary">0</span>
                     </a>
                 </li>
-                  ${profileBtn}
+                ${profileBtn}
             </ul>
         </nav>
         <nav class="navbar navbar-expand-md navbar-light justify-content-center">
