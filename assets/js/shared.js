@@ -2,7 +2,13 @@ let user = localStorage.getItem('user');
 
 let profileBtn = '<li class="nav-item"><a class="nav-link" href="login.html"><i class="material-icons">login</i></a></li>'
 if (user) {
-    profileBtn = `<li class="nav-item"><a class="nav-link" type="button" onclick="alert('${user}')"><i class="material-icons">account_circle</i></a></li>`
+    profileBtn = `<li class="nav-item"><a class="nav-link" type="button" onclick="alert('${user}')"><i class="material-icons">account_circle</i></a></li>
+                <li class="nav-item"><a class="nav-link" type="button" onclick="logout()"><i class="material-icons">logout</i></a></li>`
+}
+
+function logout() {
+    localStorage.removeItem('user')
+    window.location.href = "index.html"
 }
 
 navHtml = `<nav class="navbar navbar-expand-md navbar-light">
@@ -14,13 +20,14 @@ navHtml = `<nav class="navbar navbar-expand-md navbar-light">
                         <input class="form-control" type="text" name="Search" placeholder="Search...">
                     </div>
                 </li>
-               ${profileBtn}
+             
                 <li class="nav-item">
                     <a class="nav-link" href="checkout.html">
                         <i class="material-icons">shopping_cart</i>
                         <span id="cartBadge" class="badge badge-secondary">0</span>
                     </a>
                 </li>
+                  ${profileBtn}
             </ul>
         </nav>
         <nav class="navbar navbar-expand-md navbar-light justify-content-center">
