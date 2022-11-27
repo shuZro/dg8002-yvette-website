@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css" />
 
     <title>Yvette - Login</title>
 </head>
@@ -13,20 +13,38 @@
     <div id="menu"></div>
 
     <div class="container">
-        <div class="card card-beige">
+        <div class="card">
             <img class="card-img-top" src="assets/images/home-banner.png" alt="home-banner">
             <div class="card-body">
-                <h5 class="card-title">Yvette</h5>
+                <h5 class="card-title">Login</h5>
                 <div class="card-text">
                     <div class="container">
+
                         <div class="row">
-                            <p>
-                                Yvette
-                            </p>
+                            <p>Email</p>
                         </div>
+                        
+                        <input type="text" name="" placeholder="Enter Email" id="email" />
+
+                        <div class="row">
+                            <p>Password</p>
+                        </div>
+
+                        <input type="password" name="" placeholder="Enter Password" id="password" />
+
                     </div>
                 </div>
-                <a href="#" class="btn btn-primary">Button</a>
+
+                <input type="submit" value="Forgot password?" title="Forgot Password?" />
+                <br />
+                <br />
+                <button type="button" value="Login" onclick="validate();">Sign in</button>
+
+                <p>New Customer? Create a New Account</p>
+                <p>OR</p>
+
+                <button type="button" onclick="continuePage();">Continue Guest</button>
+
             </div>
         </div>
     </div>
@@ -34,11 +52,10 @@
     <div id="footer"></div>
 
     <script type="text/javascript" src="assets/js/shared.js"></script>
+
     <script type="text/javascript" src="assets/js/login.js"></script>
 </body>
 </html>
-
-
 
 
 
