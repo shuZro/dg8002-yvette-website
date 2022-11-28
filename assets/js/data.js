@@ -14,7 +14,7 @@ data = `[
     "image": "assets/images/dresses/02.png",
     "title": " Dress 2",
     "price": 35,
-    "description": "",
+    "description": "White dress",
     "colour": "white",
     "type": "new,bridal",
     "rating": 1
@@ -24,7 +24,7 @@ data = `[
     "image": "assets/images/dresses/03.png",
     "title": " Dress 3",
     "price": 65,
-    "description": "",
+    "description": "White dress",
     "colour": "white",
     "type": "new,bridal",
     "rating": 4
@@ -34,7 +34,7 @@ data = `[
     "image": "assets/images/dresses/04.png",
     "title": " Dress 4",
     "price": 79,
-    "description": "",
+    "description": "White dress",
     "colour": "white",
     "type": "new,bridal,rental",
     "rating": 3
@@ -44,7 +44,7 @@ data = `[
     "image": "assets/images/dresses/05.png",
     "title": " Dress 5",
     "price": 300,
-    "description": "",
+    "description": "Pink dress",
     "colour": "pink",
     "type": "prom",
     "rating": 3
@@ -54,7 +54,7 @@ data = `[
     "image": "assets/images/dresses/06.png",
     "title": " Dress 6",
     "price": 50,
-    "description": "",
+    "description": "Pink dress",
     "colour": "pink",
     "type": "prom,rental",
     "rating": 2
@@ -64,7 +64,7 @@ data = `[
     "image": "assets/images/dresses/07.png",
     "title": " Dress 7",
     "price": 105,
-    "description": "",
+    "description": "Red dress",
     "colour": "red",
     "type": "prom,rental",
     "rating": 4
@@ -74,7 +74,7 @@ data = `[
     "image": "assets/images/dresses/08.png",
     "title": " Dress 8",
     "price": 600,
-    "description": "",
+    "description": "Pink dress",
     "colour": "pink",
     "type": "prom,rental",
     "rating": 5
@@ -84,7 +84,7 @@ data = `[
     "image": "assets/images/dresses/09.png",
     "title": " Dress 9",
     "price": 84,
-    "description": "",
+    "description": "Blue prom dress",
     "colour": "blue",
     "type": "sale,rental,prom",
     "rating": 1
@@ -94,7 +94,7 @@ data = `[
     "image": "assets/images/dresses/10.png",
     "title": " Dress 10",
     "price": 1100,
-    "description": "",
+    "description": "Grey dress",
     "colour": "grey",
     "type": "sale,plus",
     "rating": 4
@@ -104,7 +104,7 @@ data = `[
     "image": "assets/images/dresses/11.png",
     "title": " Dress 11",
     "price": 98,
-    "description": "",
+    "description": "Pink dress",
     "colour": "pink",
     "type": "sale",
     "rating": 2
@@ -114,7 +114,7 @@ data = `[
     "image": "assets/images/dresses/12.png",
     "title": " Dress 12",
     "price": 700,
-    "description": "",
+    "description": "Pink dress",
     "colour": "pink",
     "type": "sale",
     "rating": 3
@@ -124,7 +124,7 @@ data = `[
     "image": "assets/images/dresses/13.png",
     "title": " Dress 13",
     "price": 840,
-    "description": "",
+    "description": "White dress",
     "colour": "white",
     "type": "plus,bridal",
     "rating": 1
@@ -134,7 +134,7 @@ data = `[
     "image": "assets/images/dresses/14.png",
     "title": " Dress 14",
     "price": 119,
-    "description": "",
+    "description": "White dress",
     "colour": "white",
     "type": "plus,bridal,rental",
     "rating": 4
@@ -144,7 +144,7 @@ data = `[
     "image": "assets/images/dresses/15.png",
     "title": " Dress 15",
     "price": 859,
-    "description": "",
+    "description": "White dress",
     "colour": "white",
     "type": "plus,bridal,sale",
     "rating": 2
@@ -154,7 +154,7 @@ data = `[
     "image": "assets/images/dresses/16.png",
     "title": " Dress 16",
     "price": 225,
-    "description": "",
+    "description": "White dress",
     "colour": "white",
     "type": "plus,bridal,new",
     "rating": 3
