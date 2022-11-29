@@ -99,7 +99,7 @@ function filterBuilder() {
 
     let html = ''
     filters.forEach(filter => {
-        html += `<ul class="list-group">${filter.name}<li class="list-group-item card-beige">`
+        html += `<ul class="list-group"><b>${filter.name}</b><li class="list-group-item card-beige">`
         filter.options.forEach((option, index) => {
             html += `
             <input type="checkbox" id="${filter.name}${index}" 

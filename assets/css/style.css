@@ -7,10 +7,6 @@ img {
 	border-radius: 2%;
 }
 
-.card-beige {
-	background-color: #f3ece1 !important;
-}
-
 a {
 	color: #868179 !important;
 }
@@ -18,3 +14,14 @@ a {
 button {
 	background-color: #868179 !important;
 }
+
+.card-beige {
+	background-color: #f3ece1 !important;
+	box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+#filters {
+	font-size: 15px;
+	padding: 5px;
+}
+
